@@ -113,9 +113,7 @@ if uploaded_file is not None:
         )
         combined_mask = np.logical_or(combined_mask, m_resized)
       severity_pct = (np.sum(combined_mask) / total_pixels) * 100.0
-      st.markdown(
-          f"**Estimated Leaf Surface Infection Severity:** `{severity_pct:.2f}%`"
-      )
+      
 
     breakdown_data = [
         {
