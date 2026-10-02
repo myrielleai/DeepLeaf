@@ -133,7 +133,7 @@ if uploaded_file is not None:
                 total_pixels = img_w * img_h
                 severity_pct = (affected_pixels / total_pixels) * 100.0
 
-                st.metric("Total Surface Lesion Area", f"{severity_pct:.2f}%")
+            
             except Exception as e:
                 st.warning(f"Could not compute lesion surface area: {e}")
 
