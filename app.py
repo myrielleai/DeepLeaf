@@ -16,7 +16,7 @@ def load_model():
   return YOLO("best.pt")
 
 
-st.title("🍅 Tomato Foliar Disease Instance Segmentation")
+st.title("Tomato Foliar Disease Detection via YOLO26 Instance Segmentation")
 st.markdown("High-resolution diagnostic engine for tomato leaf pathologies.")
 
 # Sidebar settings
@@ -72,7 +72,7 @@ if uploaded_file is not None:
     st.image(res_image, use_container_width=True)
 
   st.divider()
-  st.subheader("📊 Diagnostic Summary")
+  st.subheader("Diagnostic Summary")
 
   boxes = results.boxes
   masks = results.masks
